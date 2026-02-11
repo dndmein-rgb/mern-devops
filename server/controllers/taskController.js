@@ -10,7 +10,7 @@ const getAllTasks = async (req, res) => {
       data: tasks,
     });
   } catch (error) {
-    console.error('Error fetching tasks:', error);
+    console.log('Error fetching tasks:', error);
     res.status(500).json({
       success: false,
       message: 'Failed to fetch tasks',

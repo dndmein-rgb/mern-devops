@@ -22,3 +22,8 @@ const taskSchema = new mongoose.Schema({
 module.exports = mongoose.model('Task', taskSchema);
 
 
+// taskSchema.pre('save', function (next) {
+//   this.title = this.title.trim();
+//   this.description = this.description.trim();
+//   next();
+// });
